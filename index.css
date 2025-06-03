@@ -69,7 +69,7 @@ header {
     letter-spacing: 1px;
     margin-bottom: 20px;
     font-weight: 600;
-    border: none; /* Removed border */
+    border: none;
 }
 
 .hero-text h1, .hero-text .big-title {
@@ -144,12 +144,15 @@ header {
 .card {
     width: 250px;
     border-radius: 8px;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Title and image separation */
+    justify-content: space-around;
+    justify-content: end;
     align-items: center;
-    height: 500px; /* Adjusted height */
+    height: 400px;
     text-align: center;
     overflow: hidden;
 }
@@ -165,7 +168,7 @@ header {
 .card h2 {
     font-size: 40px;
     margin: 0;
-    flex-grow: 1; /* Center title vertically */
+    flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,7 +178,6 @@ header {
     width: auto;
     height: 200px;
     object-fit: contain;
-    margin-top: auto;
 }
 
 .card-decor { background-color: #E1E4C2; }
@@ -194,7 +196,6 @@ header {
     object-fit: contain;
 }
 
-/* Featured Section */
 .featured-section {
     background-color: white;
     padding: 0;
@@ -245,7 +246,6 @@ header {
     font-weight: bold;
 }
 
-/* Service Features */
 .service-features {
     display: flex;
     justify-content: center;
@@ -309,32 +309,32 @@ header {
 .design-text {
     margin-top: 40px;
     width: 100%;
-    text-align: left; /* Change alignment to left */
-    padding: 0 20px; /* Optional: Padding for small screens */
+    text-align: left;
+    padding: 0 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .design-text div h3 {
-    font-size: 24px; /* Slightly larger font */
+    font-size: 24px;
     font-weight: bold;
-    color: #000; /* Darker color */
+    color: #000;
     margin-bottom: 10px;
 }
 
 .design-text div p {
-    font-size: 16px; /* Larger font for readability */
-    color: #333; /* Slightly darker text */
+    font-size: 16px;
+    color: #333;
     margin-bottom: 20px;
-    line-height: 1.6; /* Improved line spacing */
+    line-height: 1.6;
 }
 
 .find-more-btn {
     display: inline-block;
     background-color: black;
     color: white;
-    padding: 12px 24px; /* Slightly larger button */
+    padding: 12px 24px; 
     text-decoration: none;
     border-radius: 25px;
     font-size: 14px;
@@ -345,7 +345,7 @@ header {
 }
 
 .find-more-btn:hover {
-    background-color: #333; /* Hover effect */
+    background-color: #333;
 }
 
 .best-sellers {
@@ -361,9 +361,9 @@ header {
 
 .best-sellers-row {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    width: 100%; /* Full width of the screen */
+    width: 100%;
     margin-bottom: 30px;
 }
 
@@ -387,6 +387,12 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
+}
+.product-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
 }
 
 .product-text h3 {
@@ -491,4 +497,183 @@ header {
     cursor: pointer;
 }
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
 
+.menu-line {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+        overflow-x: hidden;
+    }
+
+    .nav-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .menu-line {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #a4a586;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .cart {
+        order: 2;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero-text, .hero-image {
+        width: 100%;
+        text-align: start;
+    }
+
+    .hero-text h1, .hero-text .big-title {
+        font-size: 32px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+    
+    .featured-text {
+        top: 10%;
+        left: 10%;
+        max-width: 50%;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .service-features {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .design-text {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        padding: 20px;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .design-text div {
+        margin-bottom: 20px;
+    }
+
+    .find-more-btn {
+        width: 20%;
+    }
+
+    .design-image img:nth-child(1) {
+        width: 100%;
+    }
+
+    .best-sellers-row {
+        grid-template-columns: 1fr; 
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .info-top {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .info-bottom .footer-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .line {
+        width: 90%;
+    }
+
+    .social-icons img {
+        width: 20px;
+        height: 20px;
+    }
+    .Brand5 , .Brand6 {
+        display: none; 
+    }
+    .design-section {
+        align-items:  start;
+    }
+    .best-sellers-row {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .product-card {
+        width: 100%;
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+    }
+    .featured-section img:nth-child(1) {
+        width: 100%;
+        height: 372px; 
+
+    }
+}
