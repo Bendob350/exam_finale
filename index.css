@@ -406,3 +406,89 @@ header {
     border-radius: 50%;
     cursor: pointer;
 }
+.info-section {
+    background-color: #A1A483;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+.info-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.info-top h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.info-top h3 {
+    font-size: 16px;
+    color: white;
+    line-height: 1.6;
+}
+
+.get-in-touch-btn {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    width: 262px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.info-bottom {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.info-bottom p {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.line {
+    height: 1px;
+    width: 80%;
+    background-color: #ccc;
+    margin: 20px auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    font-weight: normal;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+
