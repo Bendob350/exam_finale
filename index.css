@@ -186,7 +186,7 @@ header {
 
 .brands {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 20px;
     margin-top: 20px;
 }
@@ -515,6 +515,21 @@ header {
 
 
 @media (max-width: 600px) {
+    .nav-links{
+        flex-direction: column;
+        background-color: black;
+        height: 100vh;
+        position: fixed;
+        right: -300px;
+        width: 300px;
+        
+    }
+
+    .othman{
+        right: 0;
+        transition: 0.5s ease-in-out;
+    }
+
     body {
         font-size: 14px;
         overflow-x: hidden;
