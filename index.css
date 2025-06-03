@@ -193,3 +193,84 @@ header {
     max-height: 50px;
     object-fit: contain;
 }
+
+/* Featured Section */
+.featured-section {
+    background-color: white;
+    padding: 0;
+    position: relative;
+}
+
+.featured-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.featured-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.featured-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+    max-width: 400px;
+}
+
+.featured-text .new-arrivals {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.featured-text h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.purchase-btn {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Service Features */
+.service-features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.service-feature {
+    max-width: 250px;
+}
+
+.service-feature img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.service-feature h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.service-feature p {
+    font-size: 14px;
+    color: #555;
+}
