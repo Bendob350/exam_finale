@@ -274,3 +274,76 @@ header {
     font-size: 14px;
     color: #555;
 }
+.design-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.design-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.design-image {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.design-image img:nth-child(1) {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hotspot {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.design-text {
+    margin-top: 40px;
+    width: 100%;
+    text-align: left; /* Change alignment to left */
+    padding: 0 20px; /* Optional: Padding for small screens */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.design-text div h3 {
+    font-size: 24px; /* Slightly larger font */
+    font-weight: bold;
+    color: #000; /* Darker color */
+    margin-bottom: 10px;
+}
+
+.design-text div p {
+    font-size: 16px; /* Larger font for readability */
+    color: #333; /* Slightly darker text */
+    margin-bottom: 20px;
+    line-height: 1.6; /* Improved line spacing */
+}
+
+.find-more-btn {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 12px 24px; /* Slightly larger button */
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+    height: 40%;
+}
+
+.find-more-btn:hover {
+    background-color: #333; /* Hover effect */
+}
